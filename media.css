@@ -1,25 +1,18 @@
-@media (max-width: 768px) {
+@media (min-width: 768px){
 
     body {
-        gap: 20px;
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        height: 98vh;
     }
 
     main {
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-columns: 0px;
-        justify-items: center;
-        align-content: center;
-    }
-
-    div#profile {
-        width: 400px;
-        height: 500px;
-        align-content: space-between;
-        justify-items: center;
+        grid-auto-flow: column;
+        grid-template-rows: none;
     }
 
     div#content {
-        width: 400px;
+        width: 500px;
     }
 }
